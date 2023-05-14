@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3C1F"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="610dp"
+        android:text="Kitapları Sizin İçin Derledik"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="575dp"
+        android:text="Hoşgeldiniz"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/login_panel"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/loginpageback">
+
+        <EditText
+            android:id="@+id/editTextPssw"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="190dp"
+            android:background="@drawable/edittextback"
+            android:drawableLeft="@drawable/pssw"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"></EditText>
+
+        <EditText
+            android:id="@+id/editTextUser"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="124dp"
+            android:background="@drawable/edittextback"
+            android:drawableLeft="@drawable/user"
+            android:ems="10"
+            android:hint="UserName"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"></EditText>
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="275dp"
+            android:backgroundTint="#2C3C1F"
+            android:text="LogIn"
+            android:textAllCaps="false"
+            android:textSize="20sp">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="347dp"
+        app:srcCompat="@drawable/uyuyankoala" />
+
+</RelativeLayout>
